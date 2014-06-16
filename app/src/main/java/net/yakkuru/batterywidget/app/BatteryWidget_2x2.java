@@ -15,7 +15,7 @@ import android.content.ComponentName;
 import android.widget.RemoteViews;
 
 
-public class BatteryWidget extends AppWidgetProvider {
+public class BatteryWidget_2x2 extends AppWidgetProvider {
     @Override
     public void onUpdate(Context c, AppWidgetManager awm, int[] awi) {
         Intent in = new Intent(c, WidgetService.class);

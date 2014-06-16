@@ -8,11 +8,17 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
-        <receiver android:name="BatteryWidget" android:label="SampleBatteryWidget">
+        <receiver android:name="BatteryWidget" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget" />
+        </receiver>
+        <receiver android:name=".BatteryWidget_2x2" android:label="BatteryWidget_2x2">
+        <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget2_2" />
         </receiver>
         <service android:name="BatteryWidget$WidgetService">
         </service>
